@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+rpg-cards
+=========
 
-You can use the [editor on GitHub](https://github.com/tanaybanerjee/tb-rpgcards.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+RPG spell/item/monster card generator
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Preview
+=======
 
-### Markdown
+Click [here](https://rpg-cards.vercel.app) for a live preview of this generator.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Support
+=======
 
-```markdown
-Syntax highlighted code block
+I (the original author) am not maintaining the project anymore, and will not be responding to issues or reviewing PRs.
+However, I have given write access to a few collaborators that are maintaining the project.
+Please reach out to me if you want to be included as collaborator, or if you want to take ownership of this project.
 
-# Header 1
-## Header 2
-### Header 3
+FAQ
+=====================
 
-- Bulleted
-- List
+- What browsers are supported?
+  - A modern browser (Chrome, Firefox, Edge, Safari). The generator has some issues on IE.
+- Cards are generated without icons and background colors, what's wrong?
+  - Enable printing backround images in your browser print dialog
+- I can't find an icon that I've seen on [game-icons.net](http://game-icons.net), where is it?
+  - See the section "updating icons" below.
+- The layout of the cards is broken (e.g., cards are placed outside the page), what's wrong?
+  - Check your page size, card size, and cards/page settings. If you ask the generator to place 4x4 poker-sized cards on a A4 paper, they won't fit and they will overflow the page.
 
-1. Numbered
-2. List
+Building
+========
 
-**Bold** and _Italic_ and `Code` text
+This project consists almost exclusively of static HTML/CSS/JavaScript files.
+The only exception are icons, which are copied from the [game-icons](http://game-icons.net) project.
 
-[Link](url) and ![Image](src)
-```
+To build this project:
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+1. Check out this repository
+2. Make sure you have [Node](https://nodejs.org/) installed
+3. Run `npm install`
+4. Run `npm run build`
+5. Open `./generator/index.html` in your browser (or deploy the content of the `./generator` folder to your server)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tanaybanerjee/tb-rpgcards.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+License
+=======
 
-### Support or Contact
+This generator is provided under the terms of the MIT License
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Icons are made by various artists, available at [http://game-icons.net](http://game-icons.net).
+They are provided under the terms of the Creative Commons 3.0 BY license.
